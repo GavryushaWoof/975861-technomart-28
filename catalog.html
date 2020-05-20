@@ -12,13 +12,16 @@
         <a href="#">
             <img src="index.html" width="" height="" alt="Логотип компания «Техномарт»">
         </a>
-        <input type="search" placeholder="Поиск:">
+        <form>
+            <button type="submit"></button>
+            <input type="search" placeholder="Поиск:">
+        </form>
         <a href="#">Закладки</a>
         <a href="#">Корзина</a>
         <a href="#">Оформить заказ</a>
 
         <p>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
-        <p><a href="tel:+78125550555">+7 (812) 555-05-55</a><br> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p><a href="tel:+78125550555">+7 (812) 555-05-55</a> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
         <section>
             <h2>Аккаунт</h2>
@@ -32,12 +35,12 @@
         <nav>
             <ul>
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="index.html#company">Компания</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Компания</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Спецпредложения</a></li>
                 <li><a href="#">Доставка</a></li>
-                <li><a href="index.html#contacts">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -63,18 +66,18 @@
             <h2>Фильтр</h2>
             <h3>Цена</h3>
             <!-- пропуск красного  -->
-            <h3>Производители</h3>
-            <input type="checkbox" name="" id="" value="Bosch">Bosch
-            <input type="checkbox" name="" id="" value="Интерскол">Интерскол
-            <input type="checkbox" name="" id="" value="Makita">Makita
-            <input type="checkbox" name="" id="" value="Dewalt">Dewalt
-            <input type="checkbox" name="" id="" value="Hitachi">Hitachi
-            <!-- тут будет форма -->
-            <h3>Питание</h3>
-            <input type="radio" name="" id="" value="Аккумуляторные">Аккумуляторные
-            <input type="radio" name="" id="" value="Сетевые">Сетевые
-            <!-- тут будет форма -->
-            <button>Показать</button>
+            <form action="">
+                <h3>Производители</h3>
+                <input type="checkbox" name="manufacturers" value="Bosch">Bosch
+                <input type="checkbox" name="manufacturers" value="Интерскол">Интерскол
+                <input type="checkbox" name="manufacturers" value="Makita">Makita
+                <input type="checkbox" name="manufacturers" value="Dewalt">Dewalt
+                <input type="checkbox" name="manufacturers" value="Hitachi">Hitachi
+                <h3>Питание</h3>
+                <input type="radio" name="powerSupply" value="Аккумуляторные">Аккумуляторные
+                <input type="radio" name="powerSupply" value="Сетевые">Сетевые
+                <button>Показать</button>
+            </form>
         </section>
 
         <section>
@@ -183,16 +186,16 @@
 
         <section>
             <h2>Как нас найти</h2>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         </section>
 
         <nav>
             <ul>
-                <li><a href="index.html#company">Компания</a></li>
+                <li><a href="#">Компания</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Доставка</a></li>
-                <li><a href="index.html#contacts">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
             <ul>
                 <li><a href="#">Материалы</a></li>
@@ -202,7 +205,7 @@
             </ul>
         </nav>
 
-        <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+        <p>&#169; 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
 
         <section>
             <h2>Давайте дружить!</h2>
@@ -219,9 +222,9 @@
             </ul>
         </section>
 
-        <p>Обратная связь:<br><a href="http://mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Обратная связь: <a href="http://mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 
-        <p>Разработано —<br><a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
+        <p>Разработано — <a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
     </footer>
 
 </body>
