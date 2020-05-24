@@ -70,15 +70,23 @@
                 <p>0 - 30000</p>
             </div>
             <form action="https://echo.htmlacademy.ru" method="get">
-                <h3>Производители</h3>
-                <label><input type="checkbox" name="manufacturers" value="Bosch" checked>Bosch</label>
-                <label><input type="checkbox" name="manufacturers" value="Interskol">Интерскол</label>
-                <label><input type="checkbox" name="manufacturers" value="Makita" checked>Makita</label>
-                <label><input type="checkbox" name="manufacturers" value="Dewalt">Dewalt</label>
-                <label><input type="checkbox" name="manufacturers" value="Hitachi">Hitachi</label>
-                <h3>Питание</h3>
-                <label><input type="radio" name="powerSupply" value="Аккумуляторные" checked>Аккумуляторные</label>
-                <label><input type="radio" name="powerSupply" value="Сетевые">Сетевые</label>
+                <fieldset>
+                    <legend>Производители</legend>
+                    <ul>
+                        <li><label><input type="checkbox" name="manufacturers" value="Bosch" checked>Bosch</label></li>
+                        <li><label><input type="checkbox" name="manufacturers" value="Interskol">Интерскол</label></li>
+                        <li><label><input type="checkbox" name="manufacturers" value="Makita" checked>Makita</label></li>
+                        <li><label><input type="checkbox" name="manufacturers" value="Dewalt">Dewalt</label></li>
+                        <li><label><input type="checkbox" name="manufacturers" value="Hitachi">Hitachi</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание</legend>
+                    <ul>
+                        <li><label><input type="radio" name="powerSupply" value="Аккумуляторные" checked>Аккумуляторные</label></li>
+                        <li><label><input type="radio" name="powerSupply" value="Сетевые">Сетевые</label></li>
+                    </ul>
+                </fieldset>
                 <button type="submit">Показать</button>
             </form>
         </section>
