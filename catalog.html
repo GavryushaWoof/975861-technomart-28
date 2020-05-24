@@ -12,9 +12,9 @@
         <a href="index.html">
             <img src="./img/logo.svg" width="240" height="47" alt="Логотип компания «Техномарт»">
         </a>
-        <form>
-            <button type="submit"></button>
-            <input type="search" placeholder="Поиск:">
+        <form action="https://echo.htmlacademy.ru" method="get">
+            <button type="submit"><img src="./img/icon-search.svg" alt="Кнопка поиска"></button>
+            <input type="search" placeholder="Поиск:" aria-label="Поле поиска" required>
         </form>
         <a href="#">Закладки</a>
         <a href="#">Корзина</a>
@@ -71,15 +71,15 @@
             </div>
             <form action="https://echo.htmlacademy.ru" method="get">
                 <h3>Производители</h3>
-                <input type="checkbox" name="manufacturers" value="Bosch">Bosch
-                <input type="checkbox" name="manufacturers" value="Интерскол">Интерскол
-                <input type="checkbox" name="manufacturers" value="Makita">Makita
-                <input type="checkbox" name="manufacturers" value="Dewalt">Dewalt
-                <input type="checkbox" name="manufacturers" value="Hitachi">Hitachi
+                <label><input type="checkbox" name="Bosch" value="Bosch">Bosch</label>
+                <label><input type="checkbox" name="Interskol" value="Interskol">Интерскол</label>
+                <label><input type="checkbox" name="Makita" value="Makita">Makita</label>
+                <label><input type="checkbox" name="Dewalt" value="Dewalt">Dewalt</label>
+                <label><input type="checkbox" name="Hitachi" value="Hitachi">Hitachi</label>
                 <h3>Питание</h3>
-                <input type="radio" name="powerSupply" value="Аккумуляторные">Аккумуляторные
-                <input type="radio" name="powerSupply" value="Сетевые">Сетевые
-                <button>Показать</button>
+                <label><input type="radio" name="powerSupply" value="Аккумуляторные">Аккумуляторные</label>
+                <label><input type="radio" name="powerSupply" value="Сетевые">Сетевые</label>
+                <button type="submit">Показать</button>
             </form>
         </section>
 
