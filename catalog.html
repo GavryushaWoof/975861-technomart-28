@@ -13,7 +13,7 @@
             <img src="./img/logo.svg" width="240" height="47" alt="Логотип компания «Техномарт»">
         </a>
         <form action="https://echo.htmlacademy.ru" method="get">
-            <button type="submit"><img src="./img/icon-search.svg" alt="Кнопка поиска"></button>
+            <button type="submit" aria-label="Кнопка поиска"></button>
             <input type="search" name="search" placeholder="Поиск:" aria-label="Поле поиска" required>
         </form>
         <a href="#">Закладки</a>
@@ -25,7 +25,13 @@
 
         <section>
             <h2>Аккаунт</h2>
-            <input type="text" value="Равшан Джамшутович" disabled>
+            <a href="#" aria-label="Ссылка на профайл">
+                <img src="./img/icon-user.svg" alt="Ссылка на профайл" width="20" height="18"> Равшан Джамшутович
+            </a>
+            <a href="#">
+                <img src="./img/icon-login.svg" alt="Выход" width="20" height="17">
+            </a>
+
             <ul>
                 <li><a href="#">Мои заказы</a></li>
                 <li><a href="#">Личный кабинет</a></li>
@@ -94,13 +100,14 @@
         <section>
             <h2>Сортировка</h2>
             <ul>
-                <li><button>По цене</button></li>
-                <li><button>По типу</button></li>
-                <li><button>По функционалу</button></li>
+                <li><a>По цене</a></li>
+                <li><a>По типу</a></li>
+                <li><a>По функционалу</a></li>
             </ul>
-            <button></button>
-            <button></button>
-            <!-- стрелочки -->
+
+            <a><img src="./img/icon-down-dir.svg" alt="Вверх" width="11" height="10"></a>
+            <a><img src="./img/icon-down-dir.svg" alt="Вниз" width="11" height="10"></a>
+
         </section>
 
         <section>
@@ -108,7 +115,7 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000">
+                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                     </a>
                     <p>30500 Р.</p>
@@ -118,7 +125,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000">
+                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                     </a>
                     <p>30500 Р.</p>
@@ -128,7 +135,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000">
+                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                     </a>
                     <p>30500 Р.</p>
@@ -138,7 +145,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 3000 and 2000.png" alt="Перфоратор BOSCH BFG 3000">
+                        <img src="./img/BOSCH BFG 3000 and 2000.png" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                     </a>
                     <p>22500 Р.</p>
@@ -148,7 +155,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000">
+                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                     </a>
                     <p>30500 Р.</p>
@@ -158,7 +165,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 3000 and 2000.png" alt="Перфоратор BOSCH BFG 2000">
+                        <img src="./img/BOSCH BFG 3000 and 2000.png" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                     </a>
                     <p>12500 Р.</p>
@@ -167,7 +174,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 3000 and 2000.png" alt="Перфоратор BOSCH BFG 3000">
+                        <img src="./img/BOSCH BFG 3000 and 2000.png" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                     </a>
                     <p>22500 Р.</p>
@@ -177,7 +184,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000">
+                        <img src="./img/BOSCH BFG 6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                     </a>
                     <p>30500 Р.</p>
@@ -187,7 +194,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./img/BOSCH BFG 3000 and 2000.png" alt="Перфоратор BOSCH BFG 2000">
+                        <img src="./img/BOSCH BFG 3000 and 2000.png" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                     </a>
                     <p>12500 Р.</p>
@@ -252,13 +259,13 @@
             <h2 class="visually-hidden">Давайте дружить!</h2>
             <ul>
                 <li>
-                    <a href="#"><img src="./img/Вконтакте.svg" alt="Вконтакте"></a>
+                    <a href="#"><img src="./img/Вконтакте.svg" alt="Вконтакте" width="44" height="44"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./img/Фейсбук.svg" alt="Фейсбук"></a>
+                    <a href="#"><img src="./img/Фейсбук.svg" alt="Фейсбук" width="44" height="44"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./img/Инстаграм.svg" alt="Инстаграм"></a>
+                    <a href="#"><img src="./img/Инстаграм.svg" alt="Инстаграм" width="44" height="44"></a>
                 </li>
             </ul>
         </section>
