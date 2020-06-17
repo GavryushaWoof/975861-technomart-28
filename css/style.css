@@ -1,3 +1,150 @@
+:root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-grey: #3D546F;
+    --basic-greyLight: #C5C5C5;
+    --basic-veryLightGrey: #EAEAEA;
+    --basic-verySofttGrey: #E5E5E5;
+    --basic-red: #EE3643;
+    --basic-darkRed: #BA2732;
+    --basic-background: #F1F5F7;
+    --basic-green: #63A63E;
+    --basic-lightGreen: #5FBB2D;
+    --basic-darkBlue: #293449;
+    --basic-mediumDarkBlue: #32425C;
+    --basic-lightBlue: #B7BFC8;
+    --basic-veryLightBlue: #F3F7F9;
+    --basic-verySoftBlue: #F2F6F8;
+    --basic-veryLightBrown: #F9F5F0;
+    --basic-verySoftBrown: #F7F3EC;
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenLight: #8ED78F;
+    --special-yellowLight: #FFD180;
+    --special-lightBrown: #FFC047;
+    --special-lightGrey: #A9A9A9;
+}
+
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Navigation */
+
+.navigation {
+    background-color: var(--basic-background);
+}
+
+.first-navigation {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: var(--basic-mediumDarkBlue);
+}
+
+.checkout {
+    background-color: var(--basic-green);
+}
+
+.inactive-account {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.inactive-account a {
+    background-color: var(--basic-white);
+}
+
+.info {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+}
+
+.address {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-mediumDarkBlue);
+}
+
+.address a {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-red);
+}
+
+.main-navigation {
+    background-color: var(--basic-mediumDarkBlue);
+    box-shadow: inset 0px -5px 0px var(--basic-darkBlue);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+
+/* User navigation */
+
+.first-navigation a,
+.site-navigation a {
+    color: var(--basic-white);
+}
+
+.first-navigation svg {
+    fill-opacity: 0.3;
+}
+
+.inactive-account a {
+    color: var(--basic-black);
+}
+
+.first-navigation svg:hover,
+.first-navigation svg:focus {
+    fill-opacity: 1;
+}
+
+.checkout:hover,
+.checkout:focus {
+    background-color: var(--basic-lightGreen);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: var(--basic-darkBlue);
+}
+
+.inactive-account a:hover,
+.inactive-account a:focus,
+.inactive-account svg:focus,
+.inactive-account svg:hover {
+    color: var(--basic-red);
+    fill: var(--basic-grey);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
