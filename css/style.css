@@ -333,6 +333,8 @@ img {
 }
 
 .product-buttons a:first-child::before {
+    display: inline-block;
+    margin-right: 9px;
     width: 15px;
     height: 15px;
     content: "";
@@ -396,6 +398,7 @@ img {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
+    white-space: nowrap;
 }
 
 .info-item {
@@ -461,15 +464,29 @@ img {
 }
 
 .company-block-list {
-    text-decoration: none;
+    list-style-type: none;
+    margin-top: 1px;
 }
 
 .company-block-list li {
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.company-block-list li::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--basic-red);
+    margin-right: 12px;
+    margin-top: 6px;
+    margin-bottom: 5px;
 }
 
 .company-block a {
+    margin-top: 8px;
     width: 220px;
     height: 38px;
     font-size: 14px;
@@ -482,6 +499,7 @@ img {
 
 .company-block p {
     width: 478px;
+    margin-bottom: 0;
 }
 
 .contacts-block {
@@ -526,12 +544,84 @@ img {
     line-height: 24px;
 }
 
+.bottom-navigation-first li:hover,
+.bottom-navigation-second li:hover,
+.bottom-contact-links a:hover {
+    text-decoration-line: underline;
+}
+
 .bottom-navigation-first a {
     color: var(--basic-background);
 }
 
 .bottom-navigation-second a {
     color: var(--special-yellowLight);
+}
+
+.bottom-contact {
+    height: 107px;
+    background-color: var(--basic-mediumDarkBlue);
+}
+
+.bottom-contact p {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.bottom-contact p:first-child {
+    width: 227px;
+}
+
+.bottom-contact-list {
+    list-style-type: none;
+}
+
+.bottom-contact-item {
+    width: 44px;
+    height: 44px;
+}
+
+.bottom-contact-item:hover path:first-child {
+    fill: var(--basic-red);
+}
+
+.bottom-contact-links p:first-child {
+    width: 137px;
+}
+
+.bottom-contact-links p:last-child {
+    width: 98px;
+}
+
+.bottom-contact-links a {
+    color: var(--special-yellowLight);
+}
+
+
+/* Pop-up */
+
+.pop-up-connection,
+.pop-up-map {
+    display: none;
+}
+
+
+/* General */
+
+.new-item {
+    position: relative;
+}
+
+.new-item::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-image: url(./../img/img-new.png);
 }
 
 .visually-hidden {
